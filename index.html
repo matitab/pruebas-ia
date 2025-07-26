@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <font href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Pruebas IA</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Roboto, serif;
+            background-color: #d8d8d8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .boton {
+            font-family: Roboto, serif;
+            background-color: #3498db;
+            color: white;
+            top: 30%;   
+            left : 2%;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .boton:hover {
+            background-color: #065d97;
+        }
+        .boton:active {
+            background-color: #145992;
+        }
+    </style>
 
+    <h1>Pruebas de Inteligencia Artificial (en desarrollo)</h1>
+    <p>Página para probar herramientas de inteligencia artificial.</p>
+    <button class="boton">Prueba 1</button>
+    <button class="boton">Prueba 2</button>
+
+    <script>
+        document.querySelectorAll('.boton').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Botón presionado: ' + button.textContent);
+            });
+        });
+    </script>
+</body>
+    
+</html>
